@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap');
 
 
@@ -17,42 +18,180 @@
     --SoftMagenta: hsl(300, 69%, 71%)
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 body{
-    background-image: url(./images/bg-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     background-color: var(--Violet);
 }
 
+.topHead{
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Violet);
+
+}
+
+
 .iconContainer{
-    padding: 10px;
+    padding-left: 45px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .imageContainer{
     display: flex;
     justify-content: center;
+    padding-bottom: 40px;
 }
 
 .ImageCenter{
-    height: 200px;
+    height: 205px;
 }
 
-article{
+.TextContainer{
     padding: 20px;
     display: flex;
     text-align: center;
     flex-direction: column;
-    justify-content: center;
 
 }
 
 
 .bodyTitle{
+    width: 280px;
+    align-self: center;
     color: white;
     padding-bottom: 20px;
 }
 
 .bodyText{
+    align-self: center;
+    width: 307px;
     color: white;
+    padding-bottom: 20px;
+}
+
+button{
+    align-self: center;
+    border-style: none;
+    width: 230px;
+    height: 40px;
+    border-radius: 30px;
+    color: var(--Violet);
+    margin-bottom: 30px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+}
+
+.face{
+    height: 30px;
+    width: 30px;
+    padding: 4px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.twit{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.insta{
+    height: 30px;
+    width: 30px;
+    padding: 4px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+@media (min-width:1024px){
+    body{
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .topHead{
+        background-image: none;
+        background-color: transparent;
+    }
+
+    .iconContainer{
+        padding: 5px;
+        padding-left: 20%;
+        margin-bottom: 10%;
+    }
+
+    .ImageCenter{
+        height: 520px;
+        padding-left: 150px;
+    }
+
+
+    .subHead{
+        align-self:center;
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+        width: 700px;
+        margin-top: 10%;
+        margin-left: 60px;
+    }
+
+    .TextContainer{
+        display: inline;
+        text-align: start;
+    }
+
+    .bodyTitle{
+        font-size: xx-large;
+        text-align: start;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        width: 395px;
+    }
+
+    .bodyText{
+        width: 465px;
+        line-height: 20px;
+        font-size: large;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    button{
+        border-style: none;
+        width: 200px;
+        height: 50px;
+        font-size: large;
+        border-radius: 30px;
+        color: var(--Violet);
+        margin-top: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif; 
+        font-weight: lighter    ;
+    }
+
+    .redes{
+        display: flex;
+        align-items: end;
+        margin-top: 50px;
+    }
+
 }
