@@ -118,6 +118,22 @@ button{
     margin-left: 10px;
 }
 
+button:hover{
+    background-color: var(--SoftMagenta);
+}
+
+.face:hover{
+    background-color: var(--SoftMagenta);
+}
+
+.twit:hover{
+    background-color: var(--SoftMagenta);
+}
+
+.insta:hover{
+    background-color: var(--SoftMagenta);
+}
+
 
 @media (min-width:1024px){
     body{
